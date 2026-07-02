@@ -1,7 +1,8 @@
 import React from 'react';
 import '../assets/styles/c-content-slider.css'
-import courses from '../data/Content_Slider';
+import courses from '../data/Content_Slider_Courses';
 import CarouselCard from './CarouselCard';
+import { ContentSliderHeading } from '../data/ContentSliderHeading';
 function ContentSlider(props) {
 
     const slides = [];
@@ -10,15 +11,21 @@ function ContentSlider(props) {
         slides.push(courses.slice(i, i + 2));
     }
 
+    /**
+     *           <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-8 text-center">
+                        <div className="c-sign-up-heading" >
+     */
+
     return (
         <section data-template="content-slider" data-view="default" className='c-content-slider'>
             <div className="container">
-                <div className="row">
+                <div className="row justify-content-center">
                     <div className="col-sm-12 col-md-12">
                         <div className="c-content-slider-heading | d-flex flex-column align-items-center">
-                            <h6>lorem ispum</h6>
-                            <h2>Lorem ipsum dolor sit.</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi error omnis ex at mollitia exercitationem nulla ab, modi natus aperiam non, distinctio velit quo recusandae illo quasi quibusdam ea quaerat.</p>
+                            <h6>{ContentSliderHeading.tagline}</h6>
+                            <h2 className='text-center'>{ContentSliderHeading.heading}</h2>
+                            <p className='text-center'>{ContentSliderHeading.description}</p>
                         </div>
                     </div>
                     <div className="col-sm-12 col-md-12">
