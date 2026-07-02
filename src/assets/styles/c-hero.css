@@ -50,7 +50,7 @@
     gap: 80px;
 
     @media (min-width: 768px) {
-        margin-block-start: 250px;
+        margin-block-start: 25rem;
     }
 
 }
@@ -58,17 +58,45 @@
 .c-img-hero__content {
     max-width: 700px;
     margin-top: 4rem;
+    gap: 1.5rem;
 
     @media (min-width: 768px) {
         gap: 40px;
         margin-top: unset;
     }
 
-    button {
+    h5 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        /* primary-color */
+        color: var(--primary-text-color);
+
+
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+
+    }
+
+    a {
+        background-color: var(--primary-text-color);
+        color: var(--light-text-color);
+        border: 1px solid var(--primary-text-color);
         padding-block: 15px;
         padding-inline: 40px;
         width: max-content;
         margin: 0 auto;
+    }
+
+    a:hover,
+    a:focus {
+        background-color: #174e9f;
+        border-color: #174e9f;
+        color: var(--light-text-color);
     }
 }
 
@@ -78,8 +106,44 @@
     }
 }
 
+/* .c-hero-cards {
+    display: none;
+
+    @media (min-width: 991px) {
+        display: flex;
+    }
+} */
+
 .c-img-hero-card {
     width: 328px;
     height: 292px;
+    background-color: var(--bg-light);
 
+
+    @media (min-width: 991px) {
+        display: flex;
+        padding-block: 35px;
+        padding-inline: 40px;
+        gap: 20px;
+    }
+
+    .c-img-hero-card__thin_red_line {
+        height: 1rem;
+        background: red;
+        width: 50px;
+        height: 2px;
+    }
+
+    .c-img-hero-card__title {
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        font-size: 16px;
+        color: var(--text-color);
+    }
+
+    .c-img-hero-card__content {
+        font-size: 14px;
+        color: var(--secondary-text-color);
+    }
 }

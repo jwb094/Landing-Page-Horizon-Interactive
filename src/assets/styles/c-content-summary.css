@@ -6,7 +6,8 @@
 
 
     @media (min-width: 991px) {
-        padding-block: 160px;
+        padding-block-start: 400px;
+        padding-block-end: 160px;
     }
 
 

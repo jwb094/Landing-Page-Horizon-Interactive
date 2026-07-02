@@ -1,6 +1,7 @@
 .c-sign-up {
     background-color: var(--bg-dark);
-    margin: 1rem;
+
+    padding: 1rem;
 
     @media (min-width: 991px) {
         margin: unset;
@@ -13,14 +14,51 @@
         margin-block-end: 80px;
 
 
+        h6 {
+
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+            /* primary-text-color */
+            color: var(--primary-color);
+        }
 
         h2 {
             font-size: clamp(1.25rem, 0.8929rem + 1.7857vw, 2.5rem);
+            /* h3 #section-title */
+
+            /* h2 */
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 50px;
+            letter-spacing: 0.2px;
+            color: var(--light-text-color);
+
+            /* light-text-color */
+
+
+
+        }
+
+        p {
+
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+
+            /* light-text-color */
+            color: var(--light-text-color);
+
+
+
         }
 
         h6,
         p {
-            font-size: clamp(0.75rem, 0.7143rem + 0.1786vw, 0.875rem);
+            font-size: clamp(0.875rem, 0.8393rem + 0.1786vw, 1rem);
         }
     }
 
@@ -30,6 +68,8 @@
         button {
             padding-block: 15px;
             padding-inline: 22.5px;
+            background: var(--primary-color);
+            color: var(--light-text-color);
         }
 
     }

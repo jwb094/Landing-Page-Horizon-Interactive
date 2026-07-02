@@ -186,7 +186,7 @@
 :root {
   /*bg color*/
   --bg-dark: #252B42;
-  --bg-light: #252B42;
+  --bg-light: #ffffff;
 
 
   --alert-color: #E77C40;
@@ -197,7 +197,9 @@
   --text-color: #252B42;
   --primary-text-color: #23A6F0;
   --secondary-text-color: #737373;
+
   --light-text-color: #ffffff;
+
   /* global scope */
 
 
