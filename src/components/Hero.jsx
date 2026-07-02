@@ -11,7 +11,7 @@ function Hero(props) {
     }
     return (
         <section
-            data-view="c-img-hero"
+            data-view="img-hero"
             data-template="default"
             className="c-img-hero position-relative"
         >

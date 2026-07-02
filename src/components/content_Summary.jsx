@@ -2,7 +2,7 @@ import React from 'react';
 import '../assets/styles/c-content-summary.css'
 function Content_Summary(props) {
     return (
-        <section data-template="c-content-summary" data-view='default' className='c-content-summary'>
+        <section data-template="content-summary" data-view='default' className='c-content-summary'>
             <div className="container">
                 <div className="row">
                     <div className="col-sm-12 col-md-6">
