@@ -1,0 +1,89 @@
+.c-content-slider {
+    background-color: var(--bg-dark);
+    padding-block: 5rem;
+
+    @media (min-width: 991px) {
+        padding-block: 160px;
+    }
+
+    .c-content-slider-heading {
+        gap: 10px;
+        padding-block-end: 40px;
+        color: var(--light-text-color);
+
+        h6 {
+            font-size: clamp(0.75rem, 0.7143rem + 0.1786vw, 0.875rem);
+            line-height: 20px;
+        }
+
+        p {
+            padding-inline: 2rem;
+            font-size: clamp(0.875rem, 0.8393rem + 0.1786vw, 1rem);
+            line-height: 20px;
+
+            @media (min-width: 991px) {
+                padding-inline: unset;
+            }
+        }
+
+        @media (min-width: 991px) {
+            padding-block-end: 80px;
+        }
+    }
+
+
+    .c-content-slider-card {
+        /* width: 330px;
+        height: 600px; */
+
+        /* @media (min-width: 991px) {
+            width: 330px;
+            height: 678px;
+        } */
+
+        .card-body {
+            gap: 10px;
+
+
+            .rating {
+                display: flex;
+                padding: 5px;
+                gap: 5px;
+                color: var(--light-text-color)
+            }
+
+            /* .category {} */
+
+            .c-content-slider-card-body__cat {
+                font-size: clamp(0.75rem, 0.7143rem + 0.1786vw, 0.875rem);
+            }
+
+            .c-content-slider-card-body__rating {
+                display: flex;
+                padding: 5px;
+                gap: 5px;
+                color: var(--light-text-color);
+            }
+
+            .c-content-slider-card-body__title {
+                font-size: clamp(0.875rem, 0.8393rem + 0.1786vw, 1rem);
+            }
+
+            .c-content-slider-card-body__content {
+                font-size: clamp(0.75rem, 0.6786rem + 0.3571vw, 1rem);
+            }
+
+            .c-content-slider-card-body__price {
+                font-size: clamp(0.75rem, 0.6786rem + 0.3571vw, 1rem);
+            }
+
+            button {
+                font-weight: 600;
+                color: var(--primary-color);
+                border: 1px solid var(--primary-color);
+            }
+        }
+    }
+
+
+}

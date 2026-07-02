@@ -1,0 +1,36 @@
+.c-sign-up {
+    background-color: var(--bg-dark);
+    margin: 1rem;
+
+    @media (min-width: 991px) {
+        margin: unset;
+        padding-block-start: 160px;
+        padding-block-end: 162px;
+    }
+
+
+    .c-sign-up-heading {
+        margin-block-end: 80px;
+
+
+
+        h2 {
+            font-size: clamp(1.25rem, 0.8929rem + 1.7857vw, 2.5rem);
+        }
+
+        h6,
+        p {
+            font-size: clamp(0.75rem, 0.7143rem + 0.1786vw, 0.875rem);
+        }
+    }
+
+    .c-sign-up-form {
+
+
+        button {
+            padding-block: 15px;
+            padding-inline: 22.5px;
+        }
+
+    }
+}

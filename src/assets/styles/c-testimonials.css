@@ -1,0 +1,53 @@
+.c-testmonials {
+    background-color: var(--bg-dark);
+    padding-block: 5rem;
+
+    @media (min-width: 991px) {
+        padding-block: 160px;
+    }
+
+
+
+    .c-testimonials-heading {
+        gap: 10px;
+
+        /* padding-block-end: 40px; */
+        p {
+            padding-inline: 2rem;
+
+            @media (min-width: 991px) {
+                padding-inline: unset;
+            }
+        }
+    }
+
+    .c-testmonial-card {
+        gap: 30px;
+        width: 501px;
+        height: 438px;
+
+        .c-testmonial-card-content {
+            padding-inline: 146px;
+
+            p {
+                margin-block-end: 15px;
+            }
+
+            /* .rating {
+                margin-block-start: 15px;
+            } */
+
+            .personal {
+                margin-block-start: 15px;
+                gap: 5px;
+
+                h5,
+                h6 {
+                    margin: 0;
+                }
+            }
+        }
+
+
+    }
+}

@@ -65,6 +65,8 @@
     }
 
     button {
+        padding-block: 15px;
+        padding-inline: 40px;
         width: max-content;
         margin: 0 auto;
     }
@@ -76,7 +78,7 @@
     }
 }
 
-.c-img-hero--card {
+.c-img-hero-card {
     width: 328px;
     height: 292px;
 
