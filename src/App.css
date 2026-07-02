@@ -1,4 +1,4 @@
-.counter {
+/* .counter {
   font-size: 16px;
   padding: 5px 10px;
   border-radius: 5px;
@@ -181,4 +181,31 @@
     right: 0;
     border-right-color: var(--border);
   }
+} */
+
+:root {
+  /*bg color*/
+  --bg-dark: #252B42;
+  --bg-light: #252B42;
+
+
+  --alert-color: #E77C40;
+  --muted: #BDBDBD;
+  --light-grey: #FAFAFA;
+  --primary-color: #23A6F0;
+  /*text color*/
+  --text-color: #252B42;
+  --primary-text-color: #23A6F0;
+  --secondary-text-color: #737373;
+  --light-text-color: #ffffff;
+  /* global scope */
+
+
+  --paragrph-fs: clamp(0.875rem, 0.7679rem + 0.5357vw, 1.25rem);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
 }
