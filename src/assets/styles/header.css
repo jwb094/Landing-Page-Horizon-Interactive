@@ -1,8 +1,19 @@
+header.header-Open {
+    position: fixed !important;
+}
+
 header.header-Open a.brandName {
     color: var(--primary-text-color);
 }
 
 header {
+    position: fixed;
+
+    @media (min-width: 991px) {
+        position: absolute;
+    }
+
+
     color: var(--primary-text-color);
 
 

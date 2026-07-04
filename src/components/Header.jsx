@@ -3,7 +3,7 @@ import '../assets/styles/header.css'
 function Header(props) {
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <header className={`position-absolute top-0 start-0 w-100 py-3 ${isOpen ? "header-Open bg-light shadow-sm" : "header-Closed"
+        <header className={` top-0 start-0 w-100 py-3 ${isOpen ? "header-Open bg-light shadow-sm" : "header-Closed"
             }`} style={{ zIndex: 1000 }}>
             <div className="container">
 
