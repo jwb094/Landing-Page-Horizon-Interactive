@@ -1,9 +1,9 @@
 import React from 'react';
-import '../assets/styles/c-content-slider.css'
-import courses from '../data/Content_Slider_Courses';
+import '../../assets/styles/c-content-slider.css'
+import courses from '../../data/Content_Slider_Courses';
 import CarouselCard from './CarouselCard';
-import { ContentSliderHeading } from '../data/ContentSliderHeading';
-import { useThemeContext } from '../context/ThemeContext';
+import { ContentSliderHeading } from '../../data/ContentSliderHeading';
+import { useThemeContext } from '../../context/ThemeContext';
 function ContentSlider(props) {
     const { theme } = useThemeContext();
     const slides = [];
