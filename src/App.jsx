@@ -5,6 +5,7 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import Header from './components/Header'
 import Hero from './components/Hero'
+import ThemeToggle from './components/ThemeToggle'
 import Content_Summary from './components/Content_Summary'
 import ContentSlider from './components/ContentSlider'
 import Testmonials from './components/Testmonials'
@@ -18,6 +19,7 @@ function App() {
       <div className="container-fluid p-0 m-0 vh-100 vw-100">
         <Header />
         <Hero />
+        <ThemeToggle />
         <Content_Summary />
         <ContentSlider />
         <Testmonials />
