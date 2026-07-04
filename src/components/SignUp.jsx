@@ -2,8 +2,9 @@
 import React, { useState, useRef } from 'react';
 import '../assets/styles/c-sign-up.css'
 import { SignUpContent } from '../data/SignUp';
+import { useThemeContext } from '../context/ThemeContext';
 function SignUp(props) {
-
+    const { theme } = useThemeContext();
 
     const inputEmailRef = useRef(null);
     const [result, setResult] = useState("");
@@ -28,14 +29,14 @@ function SignUp(props) {
     }
 
     return (
-        <section data-template="sign-up" data-view="default" className='c-sign-up'>
+        <section data-template="sign-up" data-view="default" className={theme === 'Light' ? 'c-sign-up bg-light-color' : 'c-sign-up bg-dark-color'}>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-sm-12 col-md-8 text-center">
                         <div className="c-sign-up-heading" >
-                            <h6 class="text-center">{SignUpContent.tagline}</h6>
-                            <h2 class="text-center">{SignUpContent.heading}</h2>
-                            <p className='text-center'>{SignUpContent.description}</p>
+                            <h6 className={theme === 'Light' ? 'primary-text-color  ' : 'light-text-color '}>{SignUpContent.tagline}</h6>
+                            <h2 className={theme === 'Light' ? 'primary-text-color  text-center' : 'light-text-color text-center'}>{SignUpContent.heading}</h2>
+                            <p className={theme === 'Light' ? 'primary-text-color  text-center' : 'light-text-color text-center'}>{SignUpContent.description}</p>
                         </div>
                         <div className="c-sign-up-form" >
                             <form action="post" onSubmit={submitForm}>

@@ -3,8 +3,9 @@ import '../assets/styles/c-content-slider.css'
 import courses from '../data/Content_Slider_Courses';
 import CarouselCard from './CarouselCard';
 import { ContentSliderHeading } from '../data/ContentSliderHeading';
+import { useThemeContext } from '../context/ThemeContext';
 function ContentSlider(props) {
-
+    const { theme } = useThemeContext();
     const slides = [];
 
     for (let i = 0; i < courses.length; i += 2) {
@@ -18,14 +19,14 @@ function ContentSlider(props) {
      */
 
     return (
-        <section data-template="content-slider" data-view="default" className='c-content-slider'>
+        <section data-template="content-slider" data-view="default" className={theme === 'Light' ? 'c-content-slider bg-light-color' : 'c-content-slider bg-dark-color'}>
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-sm-12 col-md-12">
                         <div className="c-content-slider-heading | d-flex flex-column align-items-center">
-                            <h6>{ContentSliderHeading.tagline}</h6>
-                            <h2 className='text-center'>{ContentSliderHeading.heading}</h2>
-                            <p className='text-center'>{ContentSliderHeading.description}</p>
+                            <h6 className={theme === 'Light' ? 'primary-text-color text-center ' : 'light-text-color text-center'}>{ContentSliderHeading.tagline}</h6>
+                            <h2 className={theme === 'Light' ? 'primary-text-color text-center ' : ' light-text-color text-center'}>{ContentSliderHeading.heading}</h2>
+                            <p className={theme === 'Light' ? 'primary-text-color text-center ' : ' light-text-color text-center'}>{ContentSliderHeading.description}</p>
                         </div>
                     </div>
                     <div className="col-sm-12 col-md-12">

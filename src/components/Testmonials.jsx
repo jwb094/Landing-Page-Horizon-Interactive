@@ -1,25 +1,26 @@
 import React from 'react';
 import TestmonialCard from '../components/Testmonials/TestmonialCard'
-// import TestmonialCard from './TestmonialCard';
+import { useThemeContext } from '../context/ThemeContext';
 import testimonials from '../data/Testmonials';
+import { TestimonialHeading } from '../data/TestmonialHeading';
 import '../assets/styles/c-testimonials.css'
 function Testmonials(props) {
-
+    const { theme } = useThemeContext();
     const slides = [];
 
     for (let i = 0; i < testimonials.length; i += 2) {
         slides.push(testimonials.slice(i, i + 2));
     }
-    console.table(slides);
+
     return (
-        <section data-template="testmonials" data-view="default" className='c-testmonials'>
+        <section data-template="testmonials" data-view="default" className={theme === 'Light' ? 'c-testmonials bg-light-color' : 'c-testmonials bg-dark-color'}>
             <div className="container">
                 <div className="row">
                     <div className="col-sm-12 col-md-12">
                         <div className="c-testimonials-heading | d-flex flex-column align-items-center">
-                            <h6>lorem ispum</h6>
-                            <h2>Lorem ipsum dolor sit.</h2>
-                            <p className='text-center'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi error omnis ex at mollitia exercitationem nulla ab, modi natus aperiam non, distinctio velit quo recusandae illo quasi quibusdam ea quaerat.</p>
+                            <h6 className={theme === 'Light' ? 'primary-text-color  ' : 'light-text-color '}>{TestimonialHeading.tagline}</h6>
+                            <h2 className={theme === 'Light' ? 'primary-text-color  text-center' : 'light-text-color text-center'}>{TestimonialHeading.heading}</h2>
+                            <p className={theme === 'Light' ? 'primary-text-color  text-center' : 'light-text-color '}>{TestimonialHeading.description}</p>
                         </div>
                     </div>
                 </div>
@@ -88,7 +89,7 @@ function Testmonials(props) {
 
                         <div className="carousel-inner">
 
-                            {slides.map((content, index) => (
+                            {testimonials.map((content, index) => (
 
                                 <div
                                     key={content.id}
