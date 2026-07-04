@@ -1,6 +1,4 @@
 .c-sign-up {
-    background-color: var(--bg-dark);
-
     padding: 1rem;
 
     @media (min-width: 991px) {
@@ -20,8 +18,7 @@
             font-weight: 700;
             line-height: 24px;
             letter-spacing: 0.2px;
-            /* primary-text-color */
-            color: var(--primary-color);
+
         }
 
         h2 {
@@ -34,11 +31,6 @@
             font-size: 40px;
             line-height: 50px;
             letter-spacing: 0.2px;
-            color: var(--light-text-color);
-
-            /* light-text-color */
-
-
 
         }
 
@@ -48,11 +40,6 @@
             font-size: 14px;
             line-height: 20px;
             letter-spacing: 0.2px;
-
-            /* light-text-color */
-            color: var(--light-text-color);
-
-
 
         }
 

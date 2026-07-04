@@ -1,5 +1,4 @@
 .c-content-slider {
-    background-color: var(--bg-dark);
     padding-block: 5rem;
     padding-inline: 2rem;
 
@@ -11,7 +10,6 @@
     .c-content-slider-heading {
         gap: 10px;
         padding-block-end: 40px;
-        color: var(--light-text-color);
 
         h6 {
             font-size: clamp(0.875rem, 0.8393rem + 0.1786vw, 1rem);
@@ -21,21 +19,15 @@
             font-size: 14px;
             line-height: 24px;
             letter-spacing: 0.2px;
-            /* primary-text-color */
-            color: var(--primary-color);
+
         }
 
         h2 {
-            /* h2 #section-title-2 */
-
             font-style: normal;
             font-weight: 700;
             font-size: 40px;
             line-height: 50px;
             letter-spacing: 0.2px;
-            color: var(--light-text-color);
-
-
 
         }
 
@@ -77,10 +69,8 @@
                 display: flex;
                 padding: 5px;
                 gap: 5px;
-                color: var(--light-text-color)
             }
 
-            /* .category {} */
 
             .c-content-slider-card-body__cat {
                 font-size: clamp(0.75rem, 0.7143rem + 0.1786vw, 0.875rem);
@@ -90,7 +80,7 @@
                 display: flex;
                 padding: 5px;
                 gap: 5px;
-                color: var(--light-text-color);
+                /* color: var(--light-text-color); */
             }
 
             .c-content-slider-card-body__title {
@@ -107,7 +97,7 @@
 
             button {
                 font-weight: 600;
-                color: var(--primary-color);
+                /* color: var(--primary-color); */
                 border: 1px solid var(--primary-color);
             }
         }

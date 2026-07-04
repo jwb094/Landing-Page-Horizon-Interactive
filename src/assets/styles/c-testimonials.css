@@ -1,5 +1,4 @@
 .c-testmonials {
-    background-color: var(--bg-dark);
     padding-block: 5rem;
 
     @media (min-width: 991px) {
@@ -11,7 +10,6 @@
     .c-testimonials-heading {
         gap: 10px;
 
-        /* padding-block-end: 40px; */
 
 
         h6 {
@@ -22,26 +20,17 @@
             font-size: 14px;
             line-height: 24px;
             letter-spacing: 0.2px;
-            /* primary-text-color */
-            color: var(--primary-color);
         }
 
         h2 {
-            /* h2 #section-title-2 */
-
             font-style: normal;
             font-weight: 700;
             font-size: 40px;
             line-height: 50px;
             letter-spacing: 0.2px;
-            color: var(--light-text-color);
-
-
-
         }
 
         p {
-            color: var(--light-text-color);
             padding-inline: 2rem;
 
             @media (min-width: 991px) {
@@ -86,21 +75,13 @@
                 gap: 5px;
 
                 h5 {
-
-
                     font-weight: 700;
                     font-size: 16px;
                     line-height: 24px;
                     letter-spacing: 0.1px;
-
-                    /* text-color */
-                    color: var(--text-color);
-
                 }
 
-                h6 {
-                    color: var(--secondary-text-color);
-                }
+
 
                 h5,
                 h6 {

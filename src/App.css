@@ -187,7 +187,7 @@
   /*bg color*/
   --bg-dark: #252B42;
   --bg-light: #ffffff;
-
+  --bg-primary-color: #23A6F0;
 
   --alert-color: #E77C40;
   --muted: #BDBDBD;
@@ -204,6 +204,30 @@
 
 
   --paragrph-fs: clamp(0.875rem, 0.7679rem + 0.5357vw, 1.25rem);
+}
+
+.bg-dark-color {
+  background-color: var(--bg-dark);
+}
+
+.bg-light-color {
+  background-color: var(--bg-light);
+}
+
+.bg-primary-color {
+  background-color: var(--bg-primary-color);
+}
+
+.primary-text-color {
+  color: var(--primary-text-color);
+}
+
+.light-text-color {
+  color: var(--light-text-color);
+}
+
+.secondary-text-color {
+  color: var(--secondary-text-color);
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");

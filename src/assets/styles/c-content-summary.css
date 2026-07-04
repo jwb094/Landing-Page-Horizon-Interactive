@@ -1,5 +1,4 @@
 .c-content-summary {
-    background-color: var(--bg-dark);
     padding-block: 5rem;
 
 
@@ -22,12 +21,10 @@
         }
 
         h2 {
-            color: var(--light-text-color);
             font-size: clamp(2.5rem, 2.3214rem + 0.8929vw, 3.125rem);
         }
 
         p {
-            color: var(--light-text-color);
             width: 75%;
             font-size: var(--paragrph-fs)
         }
@@ -36,7 +33,6 @@
             text-decoration: none;
             gap: 10px;
             font-weight: 900;
-            color: var(--primary-text-color);
         }
 
         gap: 1rem;

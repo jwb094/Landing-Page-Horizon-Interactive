@@ -8,13 +8,13 @@ header.header-Open a.brandName {
 
 header {
     position: fixed;
+    color: var(--primary-text-color);
 
     @media (min-width: 991px) {
         position: absolute;
     }
 
 
-    color: var(--primary-text-color);
 
 
     a.brandName {
