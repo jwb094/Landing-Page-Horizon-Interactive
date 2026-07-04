@@ -2,7 +2,7 @@ import React from 'react';
 import { useContext } from 'react';
 import { useState, createContext } from 'react';
 import { useThemeContext } from "../context/ThemeContext";
-
+import '../assets/styles/c-theme-toggler.css'
 export const ThemeSwticherContext = createContext();
 
 function ThemeToggle(props) {
@@ -10,7 +10,7 @@ function ThemeToggle(props) {
     const { theme, handleSelect } = useThemeContext();
 
     return (
-        <div data-template="theme-toggler" data-view="default" className="c-theme-toggler | position-fixed right-0 | bg-light">
+        <section data-template="theme-toggler" data-view="default" className="c-theme-toggler | position-fixed right-0 rounded-pill | bg-primary-color text-light">
 
             <div class="form-check form-switch">
                 <input class="form-check-input"
@@ -24,7 +24,7 @@ function ThemeToggle(props) {
             </div>
 
 
-        </div>
+        </section>
     );
 }
 
