@@ -18,7 +18,11 @@ header {
 
 
     a.brandName {
-        color: var(--light-text-color);
+        color: var(--primary-text-color);
+
+        @media (min-width: 991px) {
+            color: var(--light-text-color);
+        }
     }
 
     a.menu-link {
